@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: roboto,Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.forms{
+    border: 1px solid rgba(0, 0, 0, 0.349);
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.general-form > input , textarea {
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 1.1rem;
+    outline: none;
+    border: 1px solid #00000048;
+}
+
+.general-form > input:focus , textarea:focus{
+    border: 1px solid #8fb6ff;
+}
+
+.general-form > input {
+    height: 30px;
+}
+
+.general-form > textarea {
+    height: 6rem;
+    resize: none;
+}
+
+.general-form > button {
+    height: 40px;
+    width: 10vw;
+    align-self: center;
+    border: none;
+    background-color: #387eff;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    color: #fff;
+    font-weight: 600;
+
+    
+}
+
+
+.general-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/*----Show General Info----*/
+
+.show-general-info {
+    display: grid;
+    grid-template-columns: 3.5fr 1fr;
+    grid-template-rows: 120px 1fr;
+}
+
+.general-top{
+    grid-area: 1/1/2/3;
+    background-color: #001846;
+    color: #fff;
+    padding: 10px;
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-weight: 700;
+
+}
+.general-right {
+    background-color: #ececec65;
+    padding: 10px;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.general-left{
+    padding: 10px;
+}
+
+.general-left-header{
+    border-bottom: 1px solid #4b4b4b3d;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #001846;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.general-left-data{
+    font-style: italic;
+    color: #4e4e4ecb;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.general-right-header{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    align-self: center;
+    color: #001846;
+}
+
+.general-right-data{
+    color: #4e4e4e;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.general-title{
+    font-size: 1.4rem;
+    font-weight: 400;
+    
+}
